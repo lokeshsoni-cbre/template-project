@@ -13,7 +13,7 @@
 
 ```bash
 # Install dependencies (creates .venv automatically)
-uv sync
+uv sync --all-groups
 
 # Install pre-commit hooks
 uv run pre-commit install
