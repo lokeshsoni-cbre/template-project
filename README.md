@@ -48,7 +48,7 @@ description = "What this project does"  # One-line summary
 
 Then update the heading and description at the top of this `README.md` to match your project.
 
-> There are no `uv` commands for changing name or description — edit `pyproject.toml` directly. Version can be bumped manually or via `uv add`/`uv remove` which regenerates the lockfile automatically.
+> There are no `uv` commands for these — edit `pyproject.toml` directly.
 
 ## Project Structure
 

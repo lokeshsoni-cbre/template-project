@@ -55,6 +55,7 @@ Thumbs.db
 
 # IDE
 .idea/
+.claude/
 *.swp
 *.swo
 *~
