@@ -1,0 +1,8 @@
+This is sample data for the template project.
+Use pathlib.Path to load files — never hardcode paths.
+
+Example records:
+id,name,value
+1,alpha,100
+2,beta,200
+3,gamma,300
