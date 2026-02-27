@@ -47,8 +47,7 @@ Everything is ready to use once the container starts. Subsequent opens are fast 
 │   ├── extensions.json
 │   └── settings.json
 ├── configs/                # Configuration files (YAML, JSON, etc.)
-├── data/                   # Data directory (gitignored except samples)
-│   ├── README.md
+├── data/                   # Data directory (gitignored — see conventions below)
 │   └── sample.txt
 ├── docs/                   # Documentation
 ├── notebooks/              # Jupyter notebooks for exploration
@@ -64,6 +63,16 @@ Everything is ready to use once the container starts. Subsequent opens are fast 
 ├── pyproject.toml          # Project metadata and dependencies
 └── README.md
 ```
+
+## Data Directory Conventions
+
+The `data/` directory is gitignored. Create subdirectories as needed:
+
+- `raw/` — Original, immutable data
+- `processed/` — Cleaned, transformed data
+- `external/` — Data from third-party sources
+
+Never commit real data files to git. Only `data/sample.txt` is tracked as a template example.
 
 ## Daily Workflow
 

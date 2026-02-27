@@ -18,7 +18,6 @@ build/
 # Data (never commit real data)
 data/*
 !data/sample.txt
-!data/README.md
 
 # Model Artifacts
 *.pkl
