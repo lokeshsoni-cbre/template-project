@@ -25,7 +25,15 @@ cp .env.example .env
 
 ### Devcontainer (Alternative)
 
-Open this repo in VS Code and click **"Reopen in Container"** when prompted. The devcontainer installs uv, syncs dependencies, and sets up pre-commit hooks automatically.
+The devcontainer provides a fully configured environment — Python 3.12, uv, Azure CLI, AWS CLI, pre-commit hooks, and all VS Code extensions — with zero local setup.
+
+1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/) and the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) VS Code extension
+2. Open this repo in VS Code
+3. When prompted, click **"Reopen in Container"** (or run `Dev Containers: Reopen in Container` from the command palette)
+4. Wait for the build to finish — dependencies sync and pre-commit hooks install automatically
+5. Copy `.env.example` to `.env` and fill in your credentials
+
+Everything is ready to use once the container starts. Subsequent opens are fast since the image is cached.
 
 ## Project Structure
 

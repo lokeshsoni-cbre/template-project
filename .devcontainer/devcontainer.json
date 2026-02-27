@@ -4,14 +4,18 @@
     "features": {
         "ghcr.io/devcontainers/features/git:1": {},
         "ghcr.io/devcontainers/features/github-cli:1": {},
-        "ghcr.io/devcontainers/features/azure-cli:1": {}
+        "ghcr.io/devcontainers/features/azure-cli:1": {},
+        "ghcr.io/devcontainers/features/aws-cli:1": {},
+        "ghcr.io/jsburckhardt/devcontainer-features/uv:1": {},
+        "ghcr.io/devcontainers/features/copilot-cli:1": {},
+        "ghcr.io/devcontainer-community/devcontainer-features/astral.sh-uv:1": {}
     },
     "containerEnv": {
         "PYTHONDONTWRITEBYTECODE": "1",
         "PYTHONUNBUFFERED": "1"
     },
-    "postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh && export PATH=\"$HOME/.local/bin:$PATH\" && uv sync --all-groups && uv run pre-commit install",
-    "postStartCommand": "export PATH=\"$HOME/.local/bin:$PATH\" && uv sync --all-groups",
+    "postCreateCommand": "uv sync --all-groups && uv run pre-commit install",
+    "postStartCommand": "uv sync --all-groups",
     "customizations": {
         "vscode": {
             "settings": {
@@ -21,12 +25,17 @@
                 "ms-python.python",
                 "ms-python.vscode-pylance",
                 "charliermarsh.ruff",
-                "github.copilot",
                 "github.copilot-chat",
                 "eamodio.gitlens",
+                "mhutchie.git-graph",
                 "ms-toolsai.jupyter",
+                "GrapeCity.gc-excelviewer",
                 "tamasfe.even-better-toml",
-                "redhat.vscode-yaml"
+                "redhat.vscode-yaml",
+                "bierner.markdown-mermaid",
+                "streetsidesoftware.code-spell-checker",
+                "usernamehw.errorlens",
+                "mechatroner.rainbow-csv"
             ]
         }
     }
