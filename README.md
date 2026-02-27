@@ -35,6 +35,21 @@ The devcontainer provides a fully configured environment — Python 3.12, uv, Az
 
 Everything is ready to use once the container starts. Subsequent opens are fast since the image is cached.
 
+## After Cloning This Template
+
+Update the project metadata in `pyproject.toml`:
+
+```toml
+[project]
+name = "your-project-name"             # Replace with your project name
+version = "0.1.0"                       # Reset or keep as-is
+description = "What this project does"  # One-line summary
+```
+
+Then update the heading and description at the top of this `README.md` to match your project.
+
+> There are no `uv` commands for changing name or description — edit `pyproject.toml` directly. Version can be bumped manually or via `uv add`/`uv remove` which regenerates the lockfile automatically.
+
 ## Project Structure
 
 ```
@@ -52,8 +67,7 @@ Everything is ready to use once the container starts. Subsequent opens are fast 
 ├── docs/                   # Documentation
 ├── notebooks/              # Jupyter notebooks for exploration
 │   └── 01_pathlib_example.ipynb
-├── pipelines/              # CI/CD pipeline definitions
-│   └── azure-pipelines-ci.yml
+├── pipelines/              # CI/CD pipeline definitions (placeholder)
 ├── scripts/                # Utility scripts
 ├── src/                    # Production source code
 ├── .env.example            # Environment variables template
